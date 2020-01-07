@@ -1,0 +1,125 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+.heading{
+  text-align: center;
+ margin: 0;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: .5s;
+}
+body{
+  background-image: url("img/mcg-venue-d40dbc-rv.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.matchvanue{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 600px;
+  background: rgba(255,255,255,.5);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: .5s;
+  box-shadow: 0 0 0 10px rgba(255,255,255,.2);
+}
+.matchvanue:hover{
+  background-color: #f9f9f9;
+}
+.matchvanue:hover h2{
+  background-color: #ff0057;
+  color: #fff;
+}
+.matchvanue:before{
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: -70%;
+  left: -120%;
+  background: #7300ab;
+  z-index: -1;
+  box-sizing: border-box;
+  border-top: 5px solid #430064;
+  transition: .5s;
+  transform: skewX(-5deg);
+}
+.matchvanue:hover:before{
+  left: -50%;
+}
+.matchvanue:hover .team1 h3.teamname{
+  color: #fff;
+}
+
+.matchvanue:after{
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: -70%;
+  right: -120%;
+  background: #ffff00;
+  z-index: -1;
+  box-sizing: border-box;
+  border-top: 5px solid #ef9b0f;
+  transition: .5s;
+  transform: skewX(5deg);
+}
+.matchvanue:hover:after{
+  right: -50%;
+}
+.team1{
+  width: 200px;
+  float: left;
+  padding: 10px 20px 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.team2{
+  width: 200px;
+  float: left;
+  padding: 10px 20px 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.team1 img,.team2 img{
+  width: 100%;
+
+}
+.details{
+  width:200px;
+  float: left;
+
+  text-align: center;
+
+}
+h3.teamname{
+  text-align: left;
+  padding: 15px 0 0;
+  margin: 15px;
+  transition: .5s;
+}
+.team2 h3.teamname{
+  text-align: right;
+}
+
+.matchdetails{
+  position: relative;
+}
+.date{
+  margin: 20px 0 0;
+}
+.verses{
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  border-radius: 50%;
+  background:#e91e63;
+  color: #fff;
+  text-align: center;
+  line-height: 50px;
+  margin: 20px auto;
+}

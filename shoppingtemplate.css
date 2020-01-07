@@ -1,0 +1,220 @@
+*{
+  padding: 0;
+  margin: 0;
+    font-family: 'Abhaya Libre', serif;
+    box-sizing: border-box;
+
+}
+body{
+
+
+}
+header{
+  display: block;
+  height: 30px;
+  background-color: #000000;
+}
+footer {
+  width: 100%;
+  display: flex;
+  height: max-content;
+  background-color: #000000;
+}
+.footermenu,.footermenu1{
+  float: left;
+  padding: 2rem;
+}
+.footer1:nth-child(2){
+  padding-left: 50px;
+}
+.footer1 h3,.footer1 ul li a,.footer1 div p , header .navleft .open i,header .navright a {
+  color: white;
+  font-size: .975em;
+}
+
+
+@media screen and (max-width:500px) {
+.footer1:nth-child(2){
+  padding-left: 1rem;
+}
+  .footermenu,.footermenu1{
+  padding: .2rem;
+    float: left;
+}
+  .footermenu ul{
+  }
+  .footer1 h3,.footer1 ul li a,.footer1 div p{
+ font-size: .4em;
+  }
+}
+
+.navleft{
+  float: left;
+  height: 100%;
+  overflow: auto;
+  width: 4%;
+}
+.navright{
+  float: right;
+  height: 100%;
+  overflow: hidden;
+  width: 30%;
+}
+.navcenterleft{
+  float: left;
+  height: 100%;
+  width: 50%;
+}
+.navcenterleftin{
+  float: left;
+}
+.navcenterright{
+  float: left;
+  height: 100%;
+  width: 16%;
+}
+.navrightin{
+  float: right;
+  padding:.3rem;
+}
+.navrightin i{
+  color: white;
+}
+.close{
+  display: none;
+}
+.close i{
+  color: red;
+}
+.visible{
+  float: left;
+}
+.dropdown-btn i {
+color: white;
+}
+
+#sidebar.active .open{
+  display: none;
+}
+#sidebar.active .close{
+    display: block;
+  }
+.visible{
+  float: left;
+}
+
+button{
+  width: 100%;
+  background-color: #000000;
+  text-decoration: none;
+  border: none;
+outline: none;
+}
+.dropdown-container{
+  background:darkgray;
+  display: none;
+}
+#sidebar{
+  position: absolute;
+  width:30%;
+  min-height: 95vh;
+  background-color: #000000;
+  left: -30%;
+  transition: .4s;
+  z-index: 3;
+}
+#sidebar .sidemenu{
+  position: absolute;
+  top: 3px;
+ left: 100%;
+  z-index: 3;
+}
+#sidebar.active{
+  left: 0;
+}
+.dropdown-btn p,.dropdown-container li a{
+  color: white;
+  text-decoration: none;
+  background: none;
+}
+.sidebarmenu ul li{
+  padding: .5rem .9rem 0 1rem;
+}
+.material-icons{
+  float: right;
+}
+.abc{
+  float: left;
+}
+.abc:nth-child(2){
+  float: right;
+}
+
+.material-icons{
+  font-size: 23px;
+}
+
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border-right: none;
+  height: 100%;
+  padding: 5px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus{
+  color: #00B4CC;
+}
+
+.searchButton {
+  width: 40px;
+  height: inherit;
+  text-align: center;
+  color: #000000;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+  background-color: #9DBFAF;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  width: 30%;
+  position: absolute;
+
+}
+.image{
+  float: left;
+  padding:10px 10px 10px 10px;
+  background-color: powderblue;
+}
+img{
+  height: 200px;
+  width: auto;
+}
+.maincontent{
+  height: 30px;
+  margin-top: 10px;
+  background-color: black;
+  display: flex;
+align-items: center;
+width: 100%;}
+.maincontent a{
+  color: white;
+}
+.description{
+background-color: grey;
+  margin-top: -6px;
+}
+.name,.price{
+  display: flex;
+  justify-content: center;
+}
