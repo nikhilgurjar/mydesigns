@@ -3,7 +3,7 @@
   margin: 0;
     font-family: 'Abhaya Libre', serif;
     box-sizing: border-box;
-
+     font-size:.9rem;
 }
 body{
 
@@ -19,6 +19,7 @@ footer {
   display: flex;
   height: max-content;
   background-color: #000000;
+  justify-content:center;
 }
 .footermenu,.footermenu1{
   float: left;
@@ -37,6 +38,8 @@ footer {
 .footer1:nth-child(2){
   padding-left: 1rem;
 }
+  .footer ul li{
+    height 10px;}
   .footermenu,.footermenu1{
   padding: .2rem;
     float: left;
@@ -117,7 +120,7 @@ outline: none;
 #sidebar{
   position: absolute;
   width:30%;
-  min-height: 95vh;
+  min-height: 100%;
   background-color: #000000;
   left: -30%;
   transition: .4s;
@@ -138,7 +141,7 @@ outline: none;
   background: none;
 }
 .sidebarmenu ul li{
-  padding: .5rem .9rem 0 1rem;
+  padding: .5rem .5rem 0 1rem;
 }
 .material-icons{
   float: right;
@@ -151,7 +154,7 @@ outline: none;
 }
 
 .material-icons{
-  font-size: 23px;
+  font-size:1.3rem;
 }
 
 .search {
@@ -192,12 +195,13 @@ outline: none;
 
 }
 .image{
+  height:max-content;
   float: left;
   padding:10px 10px 10px 10px;
   background-color: powderblue;
 }
 img{
-  height: 200px;
+  height:30vw;
   width: auto;
 }
 .maincontent{
@@ -213,8 +217,14 @@ width: 100%;}
 .description{
 background-color: grey;
   margin-top: -6px;
+  height:2.5rem;
 }
 .name,.price{
   display: flex;
   justify-content: center;
 }
+.mainbody{
+  height:max-content;}
+.contentbox{
+  height:max-content;
+  width:100%;}
